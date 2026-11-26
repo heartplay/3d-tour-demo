@@ -21,36 +21,38 @@
     </script>
   </head>
   <body>
-    <!-- <p class="heading">Интерактивный 3D-тур</p>
+    <section class="tour-section">
+      <!-- <p class="heading">Интерактивный 3D-тур</p>
 
-    <p class="description">
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-    </p> -->
+      <p class="description">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+      </p> -->
 
-    <div class="tour">
-      <!-- карта -->
-      <div class="screen active" id="map-screen">
-        <div class="map-canvas">
-          <img src="./assets/map/kvrt.png" alt="Карта" class="map-image" />
+      <div class="tour">
+        <!-- карта -->
+        <div class="screen active" id="map-screen">
+          <div class="map-canvas">
+            <img src="./assets/map/kvrt.png" alt="Карта" class="map-image" />
 
-          <div id="map-pins"></div>
+            <div id="map-pins"></div>
+          </div>
+        </div>
+
+        <!-- панорама -->
+        <div id="pano-screen" class="screen">
+          <div id="viewer"></div>
+
+          <div class="pano-top-bar">
+            <button id="btn-back-map" class="ui-btn">← На карту</button>
+          </div>
+
+          <div class="pano-bottom-bar">
+            <button id="btn-prev" class="ui-btn">← Пред.</button>
+            <button id="btn-next" class="ui-btn">След. →</button>
+          </div>
         </div>
       </div>
-
-      <!-- панорама -->
-      <div id="pano-screen" class="screen">
-        <div id="viewer"></div>
-
-        <div class="pano-top-bar">
-          <button id="btn-back-map" class="ui-btn">← На карту</button>
-        </div>
-
-        <div class="pano-bottom-bar">
-          <button id="btn-prev" class="ui-btn">← Пред.</button>
-          <button id="btn-next" class="ui-btn">След. →</button>
-        </div>
-      </div>
-    </div>
+    </section>
 
     <script type="module" src="./app.js"></script>
   </body>
